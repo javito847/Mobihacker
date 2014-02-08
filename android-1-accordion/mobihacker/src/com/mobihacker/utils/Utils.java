@@ -35,6 +35,7 @@ public class Utils {
 		LinearLayout row = new LinearLayout(context);
 		LayoutTransition lt = new LayoutTransition();
 		lt.enableTransitionType(LayoutTransition.CHANGING);
+		lt.disableTransitionType(LayoutTransition.APPEARING);
 		lt.setStartDelay(LayoutTransition.CHANGE_DISAPPEARING, 0);
 		row.setLayoutTransition(lt);
 		row.setBackgroundColor(Color.WHITE);
