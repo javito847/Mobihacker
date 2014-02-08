@@ -1,7 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:background="#E8E8E8" >
 
     <ScrollView
         android:id="@+id/scroller"
@@ -13,8 +14,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
+            
+             <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#888888"
+            android:paddingBottom="10dp"
+            android:textSize="12sp"
+            android:text="Anger comes from our irrational perceptions of reality. There are four types of internal reasoning that contribute to anger:" />
+            
         </LinearLayout>
-        
+  
     </ScrollView>
 
 </LinearLayout>

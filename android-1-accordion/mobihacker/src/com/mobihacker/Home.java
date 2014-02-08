@@ -21,7 +21,8 @@ public class Home extends Activity {
 		setContentView(R.layout.activity_home);
 		
 		LinearLayout accordionLayout = (LinearLayout) findViewById(R.id.accordion);
-
+		accordionLayout.setPadding(15, 15, 15, 15);
+		
 		try {
 			Accordion accordion = new Accordion(this, Utils.readJson(this));
 			accordionLayout.addView(accordion, new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
